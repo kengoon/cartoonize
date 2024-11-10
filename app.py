@@ -20,7 +20,8 @@ ngrok_key = "6CCuVuVJRZN26ZLic4Ysy_7U12rQrbQNQNQ1LSsTZNT"
 port = 5000
 from pyngrok import ngrok
 ngrok.set_auth_token(ngrok_key)
-ngrok.connect(port).public_url
+url = ngrok.connect(port).public_url
+print(url)
 # if opts['colab-mode']:
 #     from flask_ngrok import run_with_ngrok #to run the application on colab using ngrok
     # import ngrok, logging
