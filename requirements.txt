@@ -1,4 +1,4 @@
-Flask==1.0.2
+Flask==2.0.3,
 gunicorn==20.0.4
 Pillow==6.2.0
 opencv_python==4.2.0.34
@@ -9,3 +9,5 @@ scikit-video==1.1.11
 tf_slim==1.1.0
 PyYaml==5.3.1
 flask-ngrok
+protobuf==3.20.*
+numpy==1.19.5
