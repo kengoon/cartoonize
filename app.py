@@ -16,8 +16,8 @@ import flask
 from PIL import Image
 import numpy as np
 import skvideo.io
-if opts['colab-mode']:
-    from flask_ngrok import run_with_ngrok #to run the application on colab using ngrok
+# if opts['colab-mode']:
+#     from flask_ngrok import run_with_ngrok #to run the application on colab using ngrok
     # import ngrok, logging
     # logging.basicConfig(level=logging.INFO)
     # listener = ngrok.werkzeug_develop()
@@ -35,8 +35,8 @@ if not opts['run_local']:
     import Algorithmia
 
 app = Flask(__name__)
-if opts['colab-mode']:
-    run_with_ngrok(app)   #starts ngrok when the app is run
+# if opts['colab-mode']:
+#     run_with_ngrok(app)   #starts ngrok when the app is run
 
 app.config['UPLOAD_FOLDER_VIDEOS'] = 'static/uploaded_videos'
 app.config['CARTOONIZED_FOLDER'] = 'static/cartoonized_images'
